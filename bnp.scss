@@ -2,14 +2,20 @@
     font-family: larke;
     src: url(fonts/LarkeNeueRegular.ttf);
 }
+html{
+	height:100%;
+	width:100%;
+}
 body{
+	position:relative;
+	top:0;
 	background-color:white;
 	margin:0;
 	width:100%;
-	height:500%;
+	height:100%;
 	#header{
 		width:100%;
-		height:2%;
+		height:10%;
 		#bnp{
 			font-family:larke;
 			border:0;
@@ -37,7 +43,7 @@ body{
 		width:100%;
 		position:relative;
 		overflow:hidden;
-		height:13%;
+		height:65%;
 		#logo{
 			position:absolute;
 			left:5%;
@@ -50,7 +56,6 @@ body{
 			bottom:0;
 			height:70%;
 			width:40%;
-			border-style:solid;
 		}
 		#phone{
 			position:absolute;
@@ -58,7 +63,6 @@ body{
 			bottom:0;
 			height:70%;
 			width:20%;
-			border-style:solid;
 		}
 		#right{
 			position:absolute;
@@ -66,23 +70,20 @@ body{
 			bottom:0;
 			height:70%;
 			width:40%;
-			border-style:solid;
 		}
 
 	}
 	#appstores{
-		border-style:solid;
 		position:relative;
 		margin-top: 3%;
 		width:100%;
-		height:4%;
+		height:20%;
 		#buttons{
 			position:absolute;
 			height:50%;
 			top:25%;
 			left:30%;
 			width:40%;
-			border-style:solid;
 			#google{
 				width: 49%;
 				position:absolute;
@@ -98,21 +99,138 @@ body{
 
 	}
 	#slider{
+		position:relative;
+		top:0;
+		left:0%;
+		color:white;
 		width:100%;
-		height:25%;
+		height:100%;
 		overflow:hidden;
+		font-family:larke;
+		#slider1{
+			height:100%;
+			width:100%;
+			position:absolute;
+			left:0%;
+			top:0%;
+			background-image:url("img/bluerect.png");
+			transform: translate(0,0);
+			transition: transform 2s;
+			h2{
+				position:absolute;
+				top:5%;
+				left:38%;
+				font-size:5vh;
+				display:block;
+			}
+			h3{
+				position:absolute;
+				top:12%;
+				left:45%;
+				text-align:center;
+				font-size:4vh;
+			}
+			h1{
+				position:absolute;
+				left:45%;
+				top:25%;
+				font-size:7vh;
+			}
+			p{
+				position:absolute;
+				top:40%;
+				left:55%;
+				font-size:3vh;
+			}
+				
+		}
+		#slider2{
+			border-style:solid;
+			height:100%;
+			width:100%;
+			position:absolute;
+			left:100%;
+			top:0;
+			background-image:url("img/bluerect.png");
+			transform: translate(0,0);
+			transition: transform 2s;
+			h2{
+				position:absolute;
+				top:5%;
+				left:40%;
+				font-size:5vh;
+				display:block;
+			}
+			h3{
+				position:absolute;
+				top:12%;
+				left:45%;
+				text-align:center;
+				font-size:4vh;
+			}
+			h1{
+				position:absolute;
+				left:45%;
+				top:25%;
+				font-size:7vh;
+			}
+			p{
+				position:absolute;
+				top:45%;
+				left:55%;
+				font-size:3vh;
+			}
+		}
+		#slider3{
+			height:100%;
+			width:100%;
+			position:absolute;
+			left:200%;
+			top:0;
+			background-image:url("img/bluerect.png");
+			transform: translate(0,0);
+			transition: transform 2s;
+			h2{
+				position:absolute;
+				top:5%;
+				left:40%;
+				font-size:5vh;
+				display:block;
+			}
+			h3{
+				position:absolute;
+				top:12%;
+				left:45%;
+				text-align:center;
+				font-size:4vh;
+			}
+			h1{
+				position:absolute;
+				left:45%;
+				top:25%;
+				font-size:7vh;
+			}
+			p{
+				position:absolute;
+				top:45%;
+				left:52%;
+				font-size:3vh;
+			}
+		}
+
 
 	}
 	#accounts{
 		width:100%;
-		height:25%;
+		height:100%;
 		#acimage{
 			width:100%;
 		}
 	}
 	#awards{
+		position:relative;
 		width:100%;
-		height:5%;
+		height:25%;
 		h2{	
 			position:absolute;
 			padding-top:2.5%;
@@ -134,10 +252,14 @@ body{
 		}
 	}
 	#history{
+		position:relative;
+		top:0;
+		left:0;
+		border-style:solid;
 		width:100%;
-		height:10%;
-		font-family:larke;
+		height:75%;
 		color:white;
+		font-family:larke;
 		#pent{
 			width:95%;
 			display:block;
@@ -145,33 +267,34 @@ body{
 		}
 		#bar{
 			position:absolute;
-			top:390%;
+			top:20%;
 			left:10%;
 			height:40%;
 			width:.3%;
 		}
 		h1{
-			position:absolute;
-			top:400%;
-			left:15%;
 			font-size:7vh;
+			position:absolute;
+			top:20%;
+			left:15%;
+
 		}
 		h3{
 			position:absolute;
-			top:410%;
+			top:35%;
 			left:15%;
 			font-size:3vh;
 		}
 		p{
 			position:absolute;
-			top:400%;
+			top:25%;
 			left:40%;
 			font-size:3vh;
 		}
 	}
 	#footer{
 		width:100%;
-		height:5%;
+		height:50%;
 	}
 }
 
