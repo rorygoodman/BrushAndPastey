@@ -13,8 +13,15 @@ body {
   width: 100%;
   height: 100%; }
   body #header {
+    position: relative;
+    top: 0;
     width: 100%;
     height: 10%; }
+    body #header #headerlogo {
+      height: 70%;
+      position: absolute;
+      top: 15%;
+      left: 5%; }
     body #header #bnp {
       font-family: larke;
       border: 0;
@@ -22,7 +29,7 @@ body {
       outline: 0;
       background: transparent;
       position: absolute;
-      top: 3%;
+      top: 40%;
       right: 20%;
       font-size: 2.5vh; }
     body #header #about {
@@ -32,7 +39,7 @@ body {
       outline: 0;
       background: transparent;
       position: absolute;
-      top: 3%;
+      top: 40%;
       right: 10%;
       font-size: 2.5vh; }
   body #topscreen {
