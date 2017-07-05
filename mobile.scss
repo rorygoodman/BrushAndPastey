@@ -1,0 +1,18 @@
+body{
+	width:100%;
+	#wrapper{
+		position:relative;
+		background: no-repeat url(img/mobilesite.png) 50% / 100%;
+		img{
+			vertical-align: top;
+			width:100%;
+		}
+		#topapple{
+			position:absolute;
+			left:73%;
+			top:.9%;
+			width:18%;
+			height:1.1%;
+		}
+	}
+}

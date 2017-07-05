@@ -4,6 +4,21 @@
 	<link rel="shortcut icon" href="img/smalllogo.png" type="favicon/png" />
 	<meta charset="UTF-8">
 	<meta name="pinterest" content="nopin" />
+	<script type="text/javascript">
+		var w= window.innerWidth;
+		var h=window.innerHeight;
+		if (w<h) {
+			document.location = "mobile.html";
+		}
+		setInterval(function(){
+			var w= window.innerWidth;
+			var h=window.innerHeight;
+			if (w<h) {
+				document.location = "mobile.html";
+			}
+				
+		},500)
+	</script>
 	<link rel="stylesheet" type="text/css" href="bnp.css">
 	<script src="brushandpastey.js"></script>
 </head>
