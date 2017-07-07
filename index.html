@@ -23,11 +23,17 @@
 	<script src="brushandpastey.js"></script>
 </head>
 
-<body onLoad="slide()">		
+<body onLoad="slide()" >		
+		<div id="overlay" onclick="nobanner()">
+			<div id="banner">
+				<h1>Text</h1>
+				<h6>More text. The best text. My text? It's unbelievable, fantastic. Their text, their text is bad, terrible. You know what they used to do to text like that? It'd be out of here on a stretcher folks.</h6>
+			</div>
+		</div>
 		<div id="header">
 			<img src="img/smalllogo.png" id="headerlogo">
-			<button onclick="myFunction()" id = "bnp">Brush and Pastey</button>
-			<button onclick="myFunction()" id = "about">About</button>
+			<button  id = "bnp">Brush and Pastey</button>
+			<button onclick="banner()" id = "about">About</button>
 		</div>
 		<div id ="topscreen">
 			<img src="img/sliderbackground.png" id="background">

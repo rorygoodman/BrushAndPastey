@@ -5,6 +5,7 @@ var bottomauto=true;
 var topbackwards=false;
 var bottombackwards=false;
 function slide(){
+	var overlay=document.getElementById("overlay");
 	var slide1=document.getElementById("slider1");
 	var slide2=document.getElementById("slider2");
 	var slide3=document.getElementById("slider3");
@@ -175,5 +176,25 @@ function noauto(slide){
 	else{
 		bottomauto=false;
 	}
+	return;
+}
+function banner(){
+	var overlay=document.getElementById("overlay");
+	var banner=document.getElementById("banner");
+	overlay.style.display="block";
+	overlay.style.opacity="1";
+	overlay.style.zIndex="10";
+	banner.style.opacity="1";
+	banner.style.transform="rotateX(0)";
+	return;
+}
+function nobanner(){
+	var overlay=document.getElementById("overlay");
+	var banner=document.getElementById("banner");
+	overlay.style.opacity="0";
+	banner.style.transform="rotateX(90deg)";
+	setTimeout(function(){
+		overlay.style.zIndex="-1";
+	},2000)
 	return;
 }
