@@ -124,6 +124,50 @@ setInterval(function(){
 	
 	return;
 }
+function bottommove(backwards){
+	bottombackwards=backwards;
+	var slide1=document.getElementById("slider1");
+	var slide2=document.getElementById("slider2");
+	var slide3=document.getElementById("slider3");
+	switch(ibottom){
+			case 1:
+				if(!bottombackwards){
+					ibottom=2;
+					slide1.style.transform="translate(-100%,0)";
+					slide2.style.transform="translate(-100%,0)";
+					slide3.style.transform="translate(-100%,0)";
+					
+					break;
+				}
+
+			case 2:
+				if(bottombackwards){
+					ibottom=1;
+					slide1.style.transform="translate(0,0)";
+					slide2.style.transform="translate(0,0)";
+					slide3.style.transform="translate(0,0)";
+				}
+				else{
+					ibottom=3;
+					slide1.style.transform="translate(-200%,0)";
+					slide2.style.transform="translate(-200%,0)";
+					slide3.style.transform="translate(-200%,0)";
+				}
+				break;
+			case 3:
+				if(bottombackwards){
+					ibottom=2;
+					slide1.style.transform="translate(-100%,0)";
+					slide2.style.transform="translate(-100%,0)";
+					slide3.style.transform="translate(-100%,0)";
+					
+				}
+				break;
+			default:
+				ibottom=1;
+		}
+	return;
+}
 function noauto(slide){
 	if(slide==1){
 		topauto=false;
