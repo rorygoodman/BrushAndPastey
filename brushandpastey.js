@@ -63,6 +63,11 @@ setInterval(function(){
 				sltext1.style.transform="translate(-100%,0)";
 				sltext2.style.transform="translate(-100%,0)";
 				sltext3.style.transform="translate(-100%,0)";
+				sltext1.style.opacity="0";
+				sltext2.style.opacity="1";
+				sltext1.style.transition="transform 2s, opacity 2s";
+				sltext2.style.transition="transform 2s, opacity 2s 1s";
+
 				
 				break;
 
@@ -75,6 +80,12 @@ setInterval(function(){
 					sltext1.style.transform="translate(0,0)";
 					sltext2.style.transform="translate(0,0)";
 					sltext3.style.transform="translate(0,0)";
+					sltext1.style.opacity="1";
+					sltext2.style.opacity="0";	
+					sltext1.style.transition="transform 2s, opacity 2s 1s";
+					sltext2.style.transition="transform 2s, opacity 2s";
+					
+					
 				}
 				else{
 					itop=3;
@@ -84,6 +95,10 @@ setInterval(function(){
 					sltext1.style.transform="translate(-200%,0)";
 					sltext2.style.transform="translate(-200%,0)";
 					sltext3.style.transform="translate(-200%,0)";
+					sltext2.style.opacity="0";
+					sltext3.style.opacity="1";	
+					sltext2.style.transition="transform 2s, opacity 2s";
+					sltext3.style.transition="transform 2s, opacity 2s 1s";
 				}
 				break;
 			case 3:
@@ -95,6 +110,10 @@ setInterval(function(){
 				sltext1.style.transform="translate(-100%,0)";
 				sltext2.style.transform="translate(-100%,0)";
 				sltext3.style.transform="translate(-100%,0)";
+				sltext2.style.opacity="1";
+				sltext3.style.opacity="0";	
+				sltext2.style.transition="transform 2s, opacity 2s 1s";
+				sltext3.style.transition="transform 2s, opacity 2s";
 				break;
 			default:
 				itop=1;
@@ -112,4 +131,5 @@ function noauto(slide){
 	else{
 		bottomauto=false;
 	}
+	return;
 }
