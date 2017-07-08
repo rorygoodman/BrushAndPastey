@@ -202,7 +202,9 @@ function nobanner(){
 	var overlay=document.getElementById("overlay");
 	var banner=document.getElementById("banner");
 	overlay.style.opacity="0";
-	banner.style.transform="rotateX(90deg)";
+	if (document.location == "index.html"){
+		banner.style.transform="rotateX(90deg)";
+	}
 	setTimeout(function(){
 		overlay.style.zIndex="-1";
 	},2000)

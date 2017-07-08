@@ -32,7 +32,7 @@ body {
         font-family: bold;
         color: white;
         position: fixed;
-        transform: rotateX(90deg);
+        transform: rotateX(0deg);
         transition: transform 2s 1s;
         left: 10%;
         top: 10%;
@@ -42,13 +42,13 @@ body {
         opacity: 1;
         border-radius: 60px; }
         body #wrapper #overlay #banner h1 {
-          font-size: 6vh;
+          font-size: 5vh;
           text-align: center; }
         body #wrapper #overlay #banner h6 {
           width: 80%;
           position: relative;
           left: 10%;
-          font-size: 4vh;
+          font-size: 3vh;
           text-align: center; }
     body #wrapper img {
       vertical-align: top;
