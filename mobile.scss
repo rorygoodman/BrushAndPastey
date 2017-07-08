@@ -1,8 +1,64 @@
+@font-face {
+    font-family: bold;
+    src: url(fonts/LarkeNeueBold.ttf);
+}
 body{
 	width:100%;
 	#wrapper{
 		position:relative;
 		background: no-repeat url(img/mobilesite.png) 50% / 100%;
+		#about{
+			position:absolute;
+			left:57%;
+			top:1.1%;
+			width:10.5%;
+			height:0.6%;
+		}
+		#sayhello{
+			position:absolute;
+			left:5%;
+			top:88.1%;
+			width:26%;
+			height:1.4%;
+		}
+		#overlay{
+			position:absolute;
+			transition:opacity 2s;
+			top:0;
+			left:0;
+			opacity:0;
+			width:100%;
+			height:100%;
+			z-index:-1;
+			background-color:rgba(50,50,50,0.7);
+			#banner{
+				font-family:bold;
+				color:white;
+				position:fixed;
+				transform:rotateX(90deg);
+				transition:transform 2s 1s;
+				left:10%;
+				top:10%;
+				width:80%;
+				height:80%;
+				background-color:violet;
+				opacity:1;
+				border-radius:60px;
+				h1{
+					font-size:6vh;
+					text-align:center;
+				}
+				h6{
+					width:80%;
+					position:relative;
+					left:10%;
+					font-size:4vh;
+					text-align:center;
+				}
+
+			}
+
+		}
 		img{
 			vertical-align: top;
 			width:100%;

@@ -22,18 +22,17 @@
 	<link rel="stylesheet" type="text/css" href="bnp.css">
 	<script src="brushandpastey.js"></script>
 </head>
-
 <body onLoad="slide()" >		
 		<div id="overlay" onclick="nobanner()">
 			<div id="banner">
-				<h1>Text</h1>
-				<h6>More text. The best text. My text? It's unbelievable, fantastic. Their text, their text is bad, terrible. You know what they used to do to text like that? It'd be out of here on a stretcher folks.</h6>
+				<h1 id ="title">Text</h1>
+				<h6 id ="text">More text. The best text. My text? It's unbelievable, fantastic. Their text, their text is bad, terrible. You know what they used to do to text like that? It'd be out of here on a stretcher folks.</h6>
 			</div>
 		</div>
 		<div id="header">
 			<img src="img/smalllogo.png" id="headerlogo">
 			<button  id = "bnp">Brush and Pastey</button>
-			<button onclick="banner()" id = "about">About</button>
+			<button onclick="banner(1)" id = "about">About</button>
 		</div>
 		<div id ="topscreen">
 			<img src="img/sliderbackground.png" id="background">
@@ -105,7 +104,7 @@
 			<div id="interested">
 				<h3>Interested in</br> the App?</h3>
 			</div>
-			<div id ="pinkbutton" onclick="banner()">
+			<div id ="pinkbutton" onclick="banner(2 )">
 				<img src="img/pinkbutton.png" id="hellobutton">
 
 			</div>

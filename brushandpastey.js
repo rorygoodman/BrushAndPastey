@@ -178,9 +178,19 @@ function noauto(slide){
 	}
 	return;
 }
-function banner(){
+function banner(textno){
 	var overlay=document.getElementById("overlay");
 	var banner=document.getElementById("banner");
+	var title=document.getElementById("title");
+	var text=document.getElementById("text");
+	if(textno==1){
+		title.innerHTML="Text";
+		text.innerHTML="More text. The best text. My text? It's unbelievable, fantastic. Their text, their text is bad, terrible. You know what they used to do to text like that? It'd be out of here on a stretcher folks."
+	}
+	else{
+		title.innerHTML="OtherText";
+		text.innerHTML="More text. The best text. My text? It's unbelievable, fantastic. Their text, their text is bad, terrible. You know what they used to do to text like that? It'd be out of here on a stretcher folks."
+	}
 	overlay.style.display="block";
 	overlay.style.opacity="1";
 	overlay.style.zIndex="10";
