@@ -121,7 +121,7 @@ setInterval(function(){
 		}
 			
 	}
-},5000)
+},8000)
 	
 	return;
 }
@@ -184,8 +184,8 @@ function banner(textno){
 	var title=document.getElementById("title");
 	var text=document.getElementById("text");
 	if(textno==1){
-		title.innerHTML="Text";
-		text.innerHTML="More text. The best text. My text? It's unbelievable, fantastic. Their text, their text is bad, terrible. You know what they used to do to text like that? It'd be out of here on a stretcher folks."
+		title.innerHTML="Aims";
+		text.innerHTML="Our first product is an oral health app for children, designed to motivate and educate children about their oral health through fun an interactive games. Based on science, and made with a friendly design, the app offers real rewards for good dental hygiene behaviour."
 	}
 	else{
 		title.innerHTML="OtherText";
@@ -194,19 +194,21 @@ function banner(textno){
 	overlay.style.display="block";
 	overlay.style.opacity="1";
 	overlay.style.zIndex="10";
+	banner.style.zIndex="11";
 	banner.style.opacity="1";
 	banner.style.transform="rotateX(0)";
 	return;
 }
-function nobanner(){
+function nobanner(rotate){
 	var overlay=document.getElementById("overlay");
 	var banner=document.getElementById("banner");
 	overlay.style.opacity="0";
-	if (document.location == "index.html"){
+	if (rotate){
 		banner.style.transform="rotateX(90deg)";
 	}
 	setTimeout(function(){
 		overlay.style.zIndex="-1";
-	},2000)
+		banner.style.zIndex="-1";
+	},1000)
 	return;
 }

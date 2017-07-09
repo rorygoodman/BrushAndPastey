@@ -6,6 +6,14 @@
     font-family: bold;
     src: url(fonts/LarkeNeueBold.ttf);
 }
+@font-face {
+    font-family: thin;
+    src: url(fonts/LarkeNeueThin.ttf);
+}
+@font-face {
+    font-family: myriad;
+    src: url(fonts/MyriadProRegular.ttf);
+}
 html{
 	height:100%;
 	width:100%;
@@ -14,37 +22,54 @@ body{
 	z-index:0;
 	#overlay{
 		position:absolute;
-		transition:opacity 2s;
+		transition:opacity 1s;
 		top:0;
 		left:0;
 		opacity:0;
 		width:100%;
-		height:545%;
+		height:565%;
 		z-index:-1;
 		background-color:rgba(50,50,50,0.7);
 		#banner{
-			font-family:bold;
-			color:white;
+			z-index:-1;
+			font-family:thin;
+			color:#666666;
 			position:fixed;
 			transform:rotateX(90deg);
-			transition:transform 2s 1s;
-			left:10%;
-			top:10%;
-			width:80%;
-			height:80%;
-			background-color:violet;
+			transition:transform 0.5s .5s;
+			left:15%;
+			top:17.5%;
+			width:70%;
+			height:65%;
+			background-color:white;
 			opacity:1;
 			border-radius:60px;
 			h1{
-				font-size:6vh;
+				font-family:myriad;
+				font-size:300%;
 				text-align:center;
 			}
 			h6{
+				font-family:thin;
 				width:80%;
 				position:relative;
 				left:10%;
-				font-size:4vh;
-				text-align:center;
+				font-size:180%;
+			}
+			#greylogo{
+				position:absolute;
+				bottom:5%;
+				left:5%;
+				height:12%;
+			}
+			#x{
+				position:absolute;
+				top:5%;
+				right:5%;
+				height:7%;
+			}
+			#x:hover{
+				cursor:pointer;
 			}
 
 		}
@@ -78,20 +103,36 @@ body{
     		position:absolute;
     		top:40%;
     		right:20%;
-    		font-size:2.5vh;
-    		color:#666666;;
+    		a{
+				font-size:2.5vh;
+    			color:#666666;
+			}
+			a:hover{
+				color:#888888;
+
+			}
 		}
 		#about{
 			font-family:bold;
-			border:0;
+
+			border:1;
      		padding:0;
      		outline:0;
-    		background:transparent;
+     		height:25%;
+     		width:7%;
     		position:absolute;
     		top:40%;
     		right:10%;
-    		font-size:2.5vh;
-    		color:#666666;;
+    		color:#666666;
+    		a{
+				font-size:2.5vh;
+    			color:#666666;
+			}
+			a:hover{
+				color:#888888;
+				cursor:pointer;
+			}
+    		
 		}
 	}
 	#topscreen{
@@ -212,6 +253,7 @@ body{
 	}
 	#appstores{
 		position:absolute;
+		z-index:3;
 		top:100%;
 		padding-bottom:10%;
 		margin-top: 2%;
@@ -253,6 +295,7 @@ body{
 	}
 	#slider{
 		position:absolute;
+		z-index:4;
 		top:140%;
 		left:0%;
 		color:white;
@@ -276,6 +319,10 @@ body{
 				height:100%;
 				width:30%;
 			}
+			img:hover{
+				cursor:pointer;
+				opacity:35%;
+			}
 		}
 		#right{
 			position:absolute;
@@ -290,6 +337,10 @@ body{
 				width:30%;
 				position:absolute;
 				right:0%;
+			}
+			img:hover{
+				cursor:pointer;
+				opacity:35%;
 			}
 		}
 		#slider1{
@@ -326,31 +377,35 @@ body{
 	}
 	#accounts{
 		position:absolute;
+		z-index:0;
 		top:235%;
 		width:100%;
-		height:70%;
+		height:80%;
 		#acimage{
 			width:75%;
 			display:block;
-			margin:auto;
+			position:absolute;
+			top:0;
+			left:15%;
 		}
 	}
 	#awards{
 		position:absolute;
-		top:302%;
+		top:315%;
 		padding-top:5%;
 		width:100%;
-		height:40%;
+		height:50%;
 		#awardbanner{
-			padding-top:10%;
+			height:45%;
 			display:block;
 			margin:auto;
-			width:70%;
+			padding-top:13%;
+
 		}
 	}
 	#history{
 		position:absolute;
-		top:360%;
+		top:370%;
 		width:100%;
 		height:75%;
 		color:white;
@@ -389,7 +444,7 @@ body{
 	}
 	#footer{
 		position:absolute;
-		top:435%;
+		top:455%;
 		left:0;
 		width:100%;
 		height:110%;
@@ -417,6 +472,9 @@ body{
 				top:0;
 				left:0;
 				width:100%;
+			}
+			#hellobutton:hover{
+				cursor:pointer;
 			}
 		}
 		#footerlogo{
