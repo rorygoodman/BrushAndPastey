@@ -46,15 +46,16 @@ body{
 			border-radius:20px;
 			h1{
 				font-family:myriad;
-				font-size:300%;
+				font-size:7vh;
 				text-align:center;
 			}
 			h6{
 				font-family:thin;
 				width:80%;
-				position:relative;
+				position:absolute;
 				left:10%;
-				font-size:180%;
+				top:10%;
+				font-size:4vh;
 			}
 			#greylogo{
 				position:absolute;
@@ -134,11 +135,9 @@ body{
 		}
 	}
 	#topscreen{
-		background: no-repeat url(img/sliderbackground.png) 50% / 100%;
-		background-size:100%;
+		background-size:100% 85%;
 		position:absolute;
 		top:15%;
-		
 		#background{
 			vertical-align: top;
    			width: 100%;
