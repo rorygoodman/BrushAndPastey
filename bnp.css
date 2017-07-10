@@ -325,6 +325,7 @@ body {
     height: 50%; }
     body #awards #awardbanner {
       height: 45%;
+      max-width: 100%;
       display: block;
       margin: auto;
       padding-top: 13%; }
@@ -352,6 +353,7 @@ body {
       left: 15%; }
     body #history h3 {
       position: absolute;
+      width: 75%;
       top: 35%;
       left: 15%;
       font-size: 3vh; }

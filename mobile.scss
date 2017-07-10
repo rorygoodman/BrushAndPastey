@@ -1,6 +1,10 @@
 @font-face {
-    font-family: bold;
-    src: url(fonts/LarkeNeueBold.ttf);
+    font-family: thin;
+    src: url(fonts/LarkeNeueThin.ttf);
+}
+@font-face {
+    font-family: myriad;
+    src: url(fonts/MyriadProRegular.ttf);
 }
 body{
 	width:100%;
@@ -36,7 +40,7 @@ body{
 		}
 		#overlay{
 			position:absolute;
-			transition:opacity 2s;
+			transition:opacity 1s;
 			top:0;
 			left:0;
 			opacity:0;
@@ -45,30 +49,46 @@ body{
 			z-index:-1;
 			background-color:rgba(50,50,50,0.7);
 			#banner{
-				font-family:bold;
-				color:white;
+				z-index:-1;
+				font-family:thin;
+				color:#666666;
 				position:fixed;
-				transform:rotateX(0deg);
-				transition:transform 2s 1s;
-				left:10%;
-				top:10%;
-				width:80%;
-				height:80%;
-				background-color:violet;
+				transition:transform 0.5s .5s;
+				left:5%;
+				top:5%;
+				width:90%;
+				height:90%;
+				background-color:white;
 				opacity:1;
-				border-radius:60px;
+				border-radius:20px;
 				h1{
-					font-size:5vh;
+					font-family:myriad;
+					font-size:700%;
 					text-align:center;
 				}
 				h6{
+					font-family:thin;
 					width:80%;
-					position:relative;
+					position:absolute;
 					left:10%;
-					font-size:3vh;
-					text-align:center;
+					top:10%;
+					font-size:350%;
 				}
-
+				#greylogo{
+					position:absolute;
+					bottom:5%;
+					left:5%;
+					width:10%;
+				}
+				#x{
+					position:absolute;
+					top:2%;
+					right:5%;
+					width:10%;
+				}
+				#x:hover{
+					cursor:pointer;
+				}
 			}
 
 		}
