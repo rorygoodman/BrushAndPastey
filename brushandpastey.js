@@ -181,20 +181,20 @@ function noauto(slide){
 function banner(textno){
 	var overlay=document.getElementById("overlay");
 	var banner=document.getElementById("banner");
-	var title=document.getElementById("title");
-	var text=document.getElementById("text");
+	//var title=document.getElementById("title");
+	//var text=document.getElementById("text");
 	if(textno==1){
-		title.innerHTML="Aims";
-		text.innerHTML="Our first product is an oral health app for children, designed to motivate and educate children about their oral health through fun an interactive games. Based on science, and made with a friendly design, the app offers real rewards for good dental hygiene behaviour."
+		//title.innerHTML="Aims";
+		//text.innerHTML="Our first product is an oral health app for children, designed to motivate and educate children about their oral health through fun an interactive games. Based on science, and made with a friendly design, the app offers real rewards for good dental hygiene behaviour."
 	}
 	else{
-		title.innerHTML="OtherText";
-		text.innerHTML="More text. The best text. My text? It's unbelievable, fantastic. Their text, their text is bad, terrible. You know what they used to do to text like that? It'd be out of here on a stretcher folks."
+		//title.innerHTML="OtherText";
+		//text.innerHTML="More text. The best text. My text? It's unbelievable, fantastic. Their text, their text is bad, terrible. You know what they used to do to text like that? It'd be out of here on a stretcher folks."
 	}
 	overlay.style.display="block";
 	overlay.style.opacity="1";
 	overlay.style.zIndex="10";
-	banner.style.zIndex="11";
+	banner.style.zIndex="12";
 	banner.style.opacity="1";
 	banner.style.transform="rotateX(0)";
 	return;

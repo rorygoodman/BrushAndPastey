@@ -40,13 +40,13 @@ body{
 		}
 		#overlay{
 			position:absolute;
-			transition:opacity 1s;
+			transition:opacity .45s;
 			top:0;
 			left:0;
 			opacity:0;
 			width:100%;
 			height:100%;
-			z-index:-1;
+			z-index:-2;
 			background-color:rgba(50,50,50,0.7);
 			#banner{
 				z-index:-1;

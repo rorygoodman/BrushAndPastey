@@ -21,6 +21,7 @@ html{
 body{
 	z-index:0;
 	#overlay{
+		overflow: hidden;
 		position:absolute;
 		transition:opacity 1s;
 		top:0;
@@ -34,16 +35,56 @@ body{
 			z-index:-1;
 			font-family:thin;
 			color:#666666;
-			position:fixed;
+			position:relative;
+			overflow:scroll;
 			transform:rotateX(90deg);
 			transition:transform 0.5s .5s;
-			left:20%;
-			top:17.5%;
-			width:60%;
-			height:70%;
+			left:10%;
+			top:2%;
+			width:80%;
 			background-color:white;
 			opacity:1;
 			border-radius:20px;
+			form{
+				display:block;
+				height:20%;
+				width:80%;
+				margin:auto;
+				input{
+					display:block;
+					font-family:thin;
+					height:50px;
+					font-size:30px;
+					height:20%;
+					width:80%;
+					margin:auto;
+
+				}
+				textarea{
+					display:block;
+					font-family:thin;
+					height:250px;
+					font-size:20px;
+					width:80%;
+					margin:auto;
+					margin-top:2%;
+				}
+				button{
+					display:block;
+					margin-top:2%;
+					margin-right:10%;
+					margin-bottom:5%;
+					width:15%;
+					font-size:20px;
+					padding-top:5px;
+					height:30px;
+					float:right;
+					font-family:bold;
+				}
+				button:hover{
+					cursor:pointer;
+				}
+			}
 			h1{
 				font-family:myriad;
 				font-size:7vh;
@@ -57,6 +98,10 @@ body{
 				top:10%;
 				font-size:4vh;
 			}
+			#formtop{	
+				padding-top:10%;
+				width:100%;
+			}
 			#greylogo{
 				position:absolute;
 				bottom:5%;
@@ -65,9 +110,9 @@ body{
 			}
 			#x{
 				position:absolute;
-				top:5%;
+				top:3%;
 				right:5%;
-				height:7%;
+				height:4%;
 			}
 			#x:hover{
 				cursor:pointer;

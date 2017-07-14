@@ -22,13 +22,18 @@
 	<link rel="stylesheet" type="text/css" href="bnp.css">
 	<script src="brushandpastey.js"></script>
 </head>
+<!--N!acMm22K*HI-->
 <body onLoad="slide()" >		
-		<div id="overlay" onclick="nobanner(true)">
+		<div id="overlay" >
 			<div id="banner">
-				<h1 id ="title">Text</h1>
-				<h6 id ="text">More text. The best text. My text? It's unbelievable, fantastic. Their text, their text is bad, terrible. You know what they used to do to text like that? It'd be out of here on a stretcher folks.</h6>
+				<img src="img/formtop.png" id="formtop">
 				<img src="img/greylogo.png" id="greylogo">
-				<img src="img/blackx.png" id="x">
+				<img src="img/blackx.png" id="x" onclick="nobanner(true)">
+				<form action="https://formspree.io/rorydpg@gmail.com" method="POST">
+				    <input type="email" name="email" placeholder="Your email">
+				    <textarea name="message" placeholder="Your message"></textarea>
+  					<button type="submit">Send</button>
+				</form>
 			</div>
 		</div>
 		<div id="header">
