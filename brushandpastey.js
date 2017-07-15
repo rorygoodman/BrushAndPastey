@@ -21,6 +21,9 @@ setInterval(function(){
 			case 1:
 				bottombackwards=false;
 				ibottom=2;
+				slide2.style.opacity="1";
+				slide3.style.opacity="0";
+				slide1.style.zIndex="0";
 				slide1.style.transform="translate(-100%,0)";
 				slide2.style.transform="translate(-100%,0)";
 				slide3.style.transform="translate(-100%,0)";
@@ -36,17 +39,21 @@ setInterval(function(){
 				}
 				else{
 					ibottom=3;
-					slide1.style.transform="translate(-200%,0)";
+					slide1.style.opacity="0";
+					slide3.style.opacity="1";
+					slide1.style.transform="translate( 100%,0)";
 					slide2.style.transform="translate(-200%,0)";
 					slide3.style.transform="translate(-200%,0)";
 				}
 				break;
 			case 3:
-				bottombackwards=true;
-				ibottom=2;
-				slide1.style.transform="translate(-100%,0)";
-				slide2.style.transform="translate(-100%,0)";
-				slide3.style.transform="translate(-100%,0)";
+				//bottombackwards=true;
+				ibottom=1;
+				slide1.style.opacity="1";
+				slide2.style.opacity="0";
+				slide1.style.transform="translate(0,0)";
+				slide2.style.transform="translate(0,0)";
+				slide3.style.transform="translate(-300%,0)";
 				break;
 			default:
 				ibottom=1;
@@ -126,6 +133,7 @@ setInterval(function(){
 	return;
 }
 function bottommove(backwards){
+	bottomauto=false;
 	bottombackwards=backwards;
 	var slide1=document.getElementById("slider1");
 	var slide2=document.getElementById("slider2");
@@ -134,23 +142,36 @@ function bottommove(backwards){
 			case 1:
 				if(!bottombackwards){
 					ibottom=2;
+					slide2.style.opacity="1";
+					slide3.style.opacity="0";
 					slide1.style.transform="translate(-100%,0)";
 					slide2.style.transform="translate(-100%,0)";
 					slide3.style.transform="translate(-100%,0)";
-					
-					break;
-				}
-
-			case 2:
-				if(bottombackwards){
-					ibottom=1;
-					slide1.style.transform="translate(0,0)";
-					slide2.style.transform="translate(0,0)";
-					slide3.style.transform="translate(0,0)";
 				}
 				else{
 					ibottom=3;
-					slide1.style.transform="translate(-200%,0)";
+					slide2.style.opacity="0";
+					slide3.style.opacity="1";
+					slide1.style.transform="translate(100%,0)";
+					slide2.style.transform="translate(-200%,0)";
+					slide3.style.transform="translate(-200%,0)";
+				}
+				break;
+
+			case 2:
+				if(bottombackwards){
+					slide1.style.opacity="1";
+					slide3.style.opacity="0";
+					ibottom=1;
+					slide1.style.transform="translate(0,0)";
+					slide2.style.transform="translate(0,0)";
+					slide3.style.transform="translate(-300%,0)";
+				}
+				else{
+					ibottom=3;
+					slide1.style.opacity="0";
+					slide3.style.opacity="1";
+					slide1.style.transform="translate( 100%,0)";
 					slide2.style.transform="translate(-200%,0)";
 					slide3.style.transform="translate(-200%,0)";
 				}
@@ -158,10 +179,20 @@ function bottommove(backwards){
 			case 3:
 				if(bottombackwards){
 					ibottom=2;
+					slide1.style.opacity="0";
+					slide2.style.opacity="1";
 					slide1.style.transform="translate(-100%,0)";
 					slide2.style.transform="translate(-100%,0)";
 					slide3.style.transform="translate(-100%,0)";
 					
+				}
+				else{
+					ibottom=1;
+					slide1.style.opacity="1";
+					slide2.style.opacity="0";
+					slide1.style.transform="translate(0,0)";
+					slide2.style.transform="translate(0,0)";
+					slide3.style.transform="translate(-300%,0)";
 				}
 				break;
 			default:
