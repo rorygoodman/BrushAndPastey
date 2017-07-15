@@ -47,6 +47,8 @@ body {
       background-color: white;
       opacity: 1;
       border-radius: 20px; }
+      body #overlay #banner h2 {
+        font-family: bold; }
       body #overlay #banner form {
         display: block;
         height: 20%;
@@ -58,22 +60,22 @@ body {
           height: 50px;
           font-size: 30px;
           height: 20%;
-          width: 80%;
+          width: 100%;
           margin: auto; }
         body #overlay #banner form textarea {
           display: block;
           font-family: thin;
           height: 250px;
           font-size: 20px;
-          width: 80%;
+          width: 100%;
           margin: auto;
           margin-top: 2%; }
         body #overlay #banner form button {
           display: block;
           margin-top: 2%;
-          margin-right: 10%;
           margin-bottom: 5%;
-          width: 15%;
+          padding: 0;
+          width: 20%;
           font-size: 20px;
           padding-top: 5px;
           height: 30px;
@@ -81,29 +83,70 @@ body {
           font-family: bold; }
         body #overlay #banner form button:hover {
           cursor: pointer; }
-      body #overlay #banner h1 {
-        font-family: myriad;
-        font-size: 7vh;
-        text-align: center; }
-      body #overlay #banner h6 {
-        font-family: thin;
-        width: 80%;
-        position: absolute;
+      body #overlay #banner #aims {
+        width: 100%;
+        position: relative;
+        padding-top: 8%; }
+        body #overlay #banner #aims h1 {
+          font-family: bold;
+          font-size: 5vh;
+          width: 80%;
+          margin: auto; }
+        body #overlay #banner #aims h6 {
+          font-family: thin;
+          width: 80%;
+          margin: auto;
+          font-size: 4vh; }
+      body #overlay #banner #docs {
+        width: 100%;
+        position: relative;
+        padding-bottom: 3%; }
+        body #overlay #banner #docs #doc1 {
+          width: 100%;
+          text-align: center; }
+        body #overlay #banner #docs #doc2 {
+          width: 50%;
+          float: left;
+          text-align: center; }
+        body #overlay #banner #docs #doc3 {
+          width: 50%;
+          float: right;
+          text-align: center; }
+        body #overlay #banner #docs #doc4 {
+          width: 33%;
+          float: left;
+          text-align: center; }
+        body #overlay #banner #docs #doc5 {
+          width: 34%;
+          text-align: center;
+          float: left; }
+        body #overlay #banner #docs #doc6 {
+          width: 33%;
+          float: right;
+          text-align: center; }
+        body #overlay #banner #docs #doc7 {
+          width: 100%;
+          float: left;
+          text-align: center; }
+      body #overlay #banner #contact {
+        position: relative;
         left: 10%;
-        top: 10%;
-        font-size: 4vh; }
-      body #overlay #banner #formtop {
-        padding-top: 10%;
-        width: 100%; }
-      body #overlay #banner #greylogo {
-        position: absolute;
-        bottom: 5%;
-        left: 5%;
-        height: 12%; }
+        margin: 0;
+        font-family: bold;
+        padding-top: 5%;
+        display: block;
+        font-size: 5vh; }
+      body #overlay #banner #bannerlogo {
+        position: relative;
+        padding-top: 15%;
+        margin-bottom: 10%;
+        display: block;
+        width: 5%;
+        left: 47.5%; }
       body #overlay #banner #x {
         position: absolute;
-        top: 3%;
-        right: 5%;
+        top: 2%;
+        right: 3%;
         height: 4%; }
       body #overlay #banner #x:hover {
         cursor: pointer; }
