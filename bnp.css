@@ -56,19 +56,21 @@ body {
         body #overlay #banner form input {
           display: block;
           font-family: thin;
-          height: 50px;
+          height: 60px;
           font-size: 30px;
           height: 20%;
           width: 100%;
-          margin: auto; }
+          margin: auto;
+          margin-bottom: 2%; }
         body #overlay #banner form textarea {
           display: block;
           font-family: thin;
-          height: 250px;
+          height: 300px;
           font-size: 20px;
           width: 100%;
           margin: auto;
-          margin-top: 2%; }
+          margin-top: 2%;
+          margin-bottom: 2%; }
         body #overlay #banner form button {
           display: block;
           margin-top: 2%;
@@ -76,8 +78,8 @@ body {
           padding: 0;
           width: 20%;
           font-size: 20px;
-          padding-top: 5px;
-          height: 30px;
+          padding-top: 10px;
+          height: 40px;
           float: right;
           font-family: bold; }
         body #overlay #banner form button:hover {
@@ -132,8 +134,8 @@ body {
         left: 10%;
         margin: 0;
         font-family: bold;
-        padding-top: 5%;
-        display: block;
+        padding-top: 10%;
+        padding-bottom: 1%;
         font-size: 5vh; }
       body #overlay #banner #bannerlogo {
         position: relative;
