@@ -39,7 +39,6 @@ body{
 			font-family:thin;
 			color:#666666;
 			position:relative;
-			overflow:scroll;
 			transform:rotateX(90deg);
 			transition:transform 0.5s .5s;
 			left:10%;
@@ -472,13 +471,14 @@ body{
 	}
 	#practices{
 		position:relative;
-		padding-top:5%;
-		padding-bottom:5%;
 		top:0%;
-		height:45%;
 		width:100%;
+		padding-top:2%;
+		padding-bottom:2%;
 		#pracimage{
-			width:100%;
+			width:60%;
+			position:relative;
+			left:7.5%;
 		}
 	}
 	#accounts{
@@ -488,9 +488,9 @@ body{
 		width:100%;
 
 		#acimage{
-			width:85%;
+			width:97%;
 			position:relative;
-			left:10%;
+			left:3%;
 		}
 	}
 	#awards{
