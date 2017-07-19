@@ -441,7 +441,8 @@ body {
       top: 25%;
       left: 40%;
       width: 55%;
-      font-size: 3vh; }
+      font-size: 150%;
+      line-height: 1.5; }
   body #footer {
     position: relative;
     top: 0%;
