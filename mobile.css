@@ -5,7 +5,8 @@
   font-family: myriad;
   src: url(fonts/MyriadProRegular.ttf); }
 body {
-  width: 100%; }
+  width: 100%;
+  margin: 0; }
   body #wrapper {
     position: relative;
     background: no-repeat url(img/mobilesite.png) 50%/100%; }
