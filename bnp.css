@@ -39,6 +39,7 @@ body {
       color: #666666;
       position: relative;
       transform: rotateX(90deg);
+      will-change: transform;
       transition: transform 0.5s .5s;
       left: 10%;
       top: 2%;
@@ -212,7 +213,7 @@ body {
         width: 100%;
         opacity: 1;
         transform: translate(0, 0);
-        transform: translateZ(0);
+        will-change: transform;
         transition: transform 2s,opacity 2s; }
         body #topscreen #backslider #bslide1 #slidetext1 {
           position: absolute;
@@ -227,7 +228,7 @@ body {
         width: 100%;
         opacity: 0;
         transform: translate(0, 0);
-        transform: translateZ(0);
+        will-change: transform;
         transition: transform 2s,opacity 2s; }
         body #topscreen #backslider #bslide2 #slidetext2 {
           position: absolute;
@@ -241,7 +242,7 @@ body {
         width: 100%;
         opacity: 0;
         transform: translate(0, 0);
-        transform: translateZ(0);
+        will-change: transform;
         transition: transform 2s, opacity 2s; }
         body #topscreen #backslider #bslide3 #slidetext3 {
           position: absolute;
@@ -261,7 +262,7 @@ body {
         left: 0;
         width: 100%;
         transform: translate(0, 0);
-        transform: translateZ(0);
+        will-change: transform;
         transition: transform 2s; }
       body #topscreen #phone #screen2 {
         position: absolute;
@@ -277,7 +278,7 @@ body {
         left: 200%;
         width: 100%;
         transform: translateZ(0);
-        transform: translate(0, 0);
+        will-change: transform;
         transition: transform 2s; }
   body #appstores {
     position: relative;
@@ -363,6 +364,7 @@ body {
       top: 0%;
       opacity: 1;
       transform: translate(0, 0);
+      will-change: transform;
       transition: transform 1.5s; }
     body #slider #slider2 {
       opacity: 1;
@@ -372,6 +374,7 @@ body {
       left: 100%;
       top: 0;
       transform: translate(0, 0);
+      will-change: transform;
       transition: transform 1.5s; }
     body #slider #slider3 {
       opacity: 1;
@@ -381,6 +384,7 @@ body {
       left: 200%;
       top: 0;
       transform: translate(-300%, 0);
+      will-change: transform;
       transition: transform 1.5s; }
   body #practices {
     position: relative;

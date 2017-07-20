@@ -40,6 +40,7 @@ body{
 			color:#666666;
 			position:relative;
 			transform:rotateX(90deg);
+			will-change: transform;
 			transition:transform 0.5s .5s;
 			left:10%;
 			top:2%;
@@ -260,7 +261,7 @@ body{
 				width:100%;
 				opacity:1;
 				transform: translate(0,0);
-				transform: translateZ(0);
+				will-change: transform;
 				transition:transform 2s,opacity 2s;
 				#slidetext1{
 					position:absolute;
@@ -278,7 +279,7 @@ body{
 				width:100%;
 				opacity:0;
 				transform: translate(0,0);
-				transform: translateZ(0);
+				will-change: transform;
 				transition:transform 2s,opacity 2s;
 				#slidetext2{
 					position:absolute;
@@ -294,7 +295,7 @@ body{
 				width:100%;
 				opacity:0;
 				transform: translate(0,0);
-				transform: translateZ(0);
+				will-change: transform;
 				transition:transform 2s, opacity 2s;
 				#slidetext3{
 					position:absolute;
@@ -318,7 +319,7 @@ body{
 				left:0;
 				width:100%;
 				transform: translate(0,0);
-				transform: translateZ(0);
+				will-change: transform;
 				transition:transform 2s;
 			}
 			#screen2{
@@ -336,7 +337,7 @@ body{
 				left:200%;
 				width:100%;
 				transform: translateZ(0);
-				transform: translate(0,0);
+				will-change: transform;
 				transition:transform 2s;
 			}
 
@@ -444,6 +445,7 @@ body{
 			top:0%;
 			opacity:1;
 			transform: translate(0,0);
+			will-change: transform;
 			transition: transform 1.5s;
 				
 		}
@@ -454,8 +456,8 @@ body{
 			position:absolute;
 			left:100%;
 			top:0;
-
 			transform: translate(0,0);
+			will-change: transform;
 			transition: transform 1.5s;
 		}
 		#slider3{
@@ -466,6 +468,7 @@ body{
 			left:200%;
 			top:0;
 			transform: translate(-300%,0);
+			will-change: transform;
 			transition: transform 1.5s;
 		}
 
