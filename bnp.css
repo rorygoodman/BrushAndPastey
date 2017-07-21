@@ -99,43 +99,12 @@ body {
           width: 80%;
           margin: auto;
           font-size: 4vh; }
-      body #overlay #banner #docs {
-        width: 100%;
-        position: relative;
-        padding-bottom: 3%; }
-        body #overlay #banner #docs #doc1 {
-          width: 100%;
-          text-align: center; }
-        body #overlay #banner #docs #doc2 {
-          width: 50%;
-          float: left;
-          text-align: center; }
-        body #overlay #banner #docs #doc3 {
-          width: 50%;
-          float: right;
-          text-align: center; }
-        body #overlay #banner #docs #doc4 {
-          width: 33%;
-          float: left;
-          text-align: center; }
-        body #overlay #banner #docs #doc5 {
-          width: 34%;
-          text-align: center;
-          float: left; }
-        body #overlay #banner #docs #doc6 {
-          width: 33%;
-          float: right;
-          text-align: center; }
-        body #overlay #banner #docs #doc7 {
-          width: 100%;
-          float: left;
-          text-align: center; }
       body #overlay #banner #contact {
         position: relative;
         left: 10%;
         margin: 0;
         font-family: bold;
-        padding-top: 10%;
+        padding-top: 3%;
         padding-bottom: 1%;
         font-size: 5vh; }
       body #overlay #banner #bannerlogo {
@@ -328,7 +297,7 @@ body {
       width: 100%; }
     body #slider #left {
       position: absolute;
-      top: 45%;
+      top: 50%;
       left: 0%;
       height: 10%;
       width: 10%;
@@ -342,7 +311,7 @@ body {
         opacity: 35%; }
     body #slider #right {
       position: absolute;
-      top: 45%;
+      top: 50%;
       right: 0%;
       height: 10%;
       width: 10%;
@@ -402,9 +371,10 @@ body {
     top: 0%;
     width: 100%; }
     body #accounts #acimage {
-      width: 97%;
+      width: 80%;
       position: relative;
-      left: 3%; }
+      left: 14%;
+      padding-top: 5%; }
   body #awards {
     position: relative;
     top: 0%;
